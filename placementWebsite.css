@@ -1,0 +1,686 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 22px;
+    overflow:hidden;
+}
+/*........................................Header Section..................................................................... */
+.home_section{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("gra3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.header_section{
+    background-color: rgb(14, 3, 53);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    height: 100px;
+    z-index: 1;
+}
+.logo{
+    
+    width: 250px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.logo_heading{
+    color: red;
+    font-weight: 600;
+    animation-name: get_started;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.logo i{
+    padding:0 10px;
+    animation-name:logo_icon_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logo_icon_animation{
+    0%{color: tomato;}
+    100%{color: white;}
+}
+
+.header_section .header{
+    width: 50%;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_section .header .menu{
+    width: 62%;
+}
+
+.header_section .header .menu .menu_list{
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+}
+.header_section .header .menu .menu_list li{
+    padding: 5px 15px;
+}
+
+.header_section .header .menu .menu_list .home{
+   
+    border: 2px solid tomato;
+    padding: 5px 15px;
+    border-radius: 10px;
+    color: white;
+}
+.header_section .header .menu .menu_list li:hover{
+    color: tomato;
+    cursor: pointer;
+}
+.header_section .header .menu .menu_list .home:hover{
+    color: tomato;
+    cursor: pointer;
+    border: 2px solid white;
+    
+}
+
+.header_section .login_register{
+    width: 20%;
+}
+.header_section .login_register .login_register_list{
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+}
+.login,.register{
+    padding: 5px 18px;
+    border: 2px solid tomato;
+    border-radius: 10px;
+    width: 130px;
+    text-align: center;
+}
+.header_section .login_register .login_register_list li:hover{
+    color: tomato;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.text_content{
+    position: absolute;
+    top: 40%;
+    left: 35px;
+    color: white;
+    font-size: 35px;
+    width: 700px;
+    height:450px;
+    position: relative;
+}
+
+.getstart_btn{
+    position: absolute;
+    top: 62%;
+    padding:8px 10px;
+    border: none;
+    outline: none;
+    background-color: teal;
+    font-weight:500;
+    border-radius: 10px;
+}
+.getstart_btn:hover{
+    color: tomato;
+    cursor: pointer;
+}
+
+.text{
+    font-size: 22px;
+}
+
+.welcome_text{
+    color:red;
+}
+
+.text_{
+    color:rgb(241, 158, 143);
+}
+
+@keyframes get_started{
+    0%{color: tomato;}
+    100%{color: white;}
+}
+.home_link,.services_link,.about,.contact{
+    text-decoration: none;
+    color: white;
+}
+.home_link,.services_link:hover{
+    color: tomato;
+}
+/* .........................................services section.................................... */
+.services_section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.services_text{
+   width: 100vw;
+   height: 360px;
+   background-color: tomato;
+   display: flex;
+   justify-content: center;
+}
+.services_text_container{
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+.req_box{
+    border: 1px solid white;
+    margin-top: 30px;
+    width:300px;
+    position:absolute;
+    left: 200px;
+    background-color: teal;
+    color: white;
+    border: none;
+    outline: none;
+}
+.text_social{
+    color: white;
+    font-size:50px;
+}
+
+.img_div{
+    width: 370px;
+    height: 340px;
+    text-align: center;
+    color:tomato;
+    position: relative;
+    top: 16px;
+}
+.img_div:hover{
+    transform: translateY(-6%);
+}
+.img_div img{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    margin-top: 40px;
+    border: 2px solid black;
+}
+.img_div_container{
+    width: 100%;
+    position:absolute;
+    top: 370px;
+    display: flex;
+    justify-content:space-around;
+   
+}
+.img_text{
+    margin-top: 60px;
+}
+/* ......................................About us section................................. */
+.about_section{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+}
+
+.about_text{
+    position: absolute;
+    top: 117px;
+}
+
+.our_team_text{
+    font-size: 60px;
+    color:tomato;
+}
+
+.hr{
+    width: 100px;
+    height: 10px;
+    background-color: tomato;
+    margin-left: 5px;
+}
+.orange_strip{
+    width: 100%;
+    height: 70px;
+    background-color: tomato;
+    position: absolute;
+    top: 65%;
+    z-index:0 ;
+}
+
+.about_images{
+    width: 250px;
+    height: 260px;
+    border: 3px solid tomato;
+   
+}
+.about_images:hover{
+    transform: translateY(-6%);
+}
+.about_image_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+
+.about_images_1{
+    position: absolute;
+    top:42%;
+    left: 250px;
+ }
+
+.about_images_2{
+    position: absolute;
+    top:50%;
+    left: 650px;
+}
+
+.about_images_3{
+    position: absolute;
+    top:44%;
+    right: 250px;
+}
+
+.img_name_1{
+    position:absolute;
+    top:78%;
+    left: 289px;
+}
+
+.img_name_2{
+    position:absolute;
+    top:86%;
+    left:700px;
+}
+.img_name_3{
+    position:absolute;
+    top:80%;
+    right: 289px;
+}
+
+.social_icons{
+    width: 250px;
+    color: tomato;
+    position: absolute;
+    top: 85%;
+    left: 250px;
+}
+
+.social_icons_1{
+    width: 250px;
+    color: tomato;
+    position: absolute;
+    top: 90%;
+    left: 655px;
+}
+
+.social_icons ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.social_icons_1 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.social_icons_2{
+    width: 250px;
+    color: tomato;
+    position: absolute;
+    top: 85%;
+    right:250px;
+}
+
+.social_icons_2 ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.fab{
+    font-size:30px;
+}
+/*............................... contact section.......................................... */
+.contact_section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.office_image{
+    width: 100vw;
+    height: 300px;
+    position: absolute;
+    top: 100px;
+    position: relative;
+}
+
+.office_image img{
+    width: 100%;
+    height: 250px;
+    z-index: 2;
+}
+.contactus{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 650px;
+    font-size: 45px;
+}
+
+.contactus_text{
+    width: 100vw;
+    height: 370px;
+    position:absolute;
+    top: 370px;
+    text-align: center;
+}
+
+.contactus_register{
+    width: 100vw;
+    height: 290px;
+    position: absolute;
+    top: 420px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactus_login_text{
+    width: 50%;
+}
+
+.sign_up{
+    color: tomato;
+}
+.login_form{
+    width: 90%;
+    height: 98%;
+    
+    border-radius: 8px;
+    margin-left: 20px;
+    position: relative;
+    font-size: 15px;
+}
+
+.inp__{
+    height:35px;
+    width: 90%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid black;
+}
+
+.inp__::placeholder{
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+.label_inp{
+    margin-left: 35px;
+}
+
+.contactus_login_form{
+    width: 50%;
+    border-radius: 10px;
+    position:relative;
+    
+}
+textarea{
+    margin-top: 15px;
+}
+
+.send_msg_btn{
+    width: 90%;
+    height: 30px;
+    margin-left:27px;
+    font-size: 20px;
+    background-color: teal;
+    border: none;
+    outline: none;
+    color: white;
+    position:absolute;
+    bottom: 10px;
+    left: 2px;
+}
+.send_msg_btn i{
+    padding-left: 10px;
+    color: white;
+}
+
+
+.fill_form_text{
+    text-align: center;
+}
+/*..................................... login section....................................................... */
+.login_section{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.login_section_color_div{
+    width: 30%;
+    height: 100vh;
+    background-color:rgb(76, 243, 187);
+    
+}
+
+.login_div{
+    width: 90%;
+    height: 75%;
+    background-image: linear-gradient(to right,20%,rgb(76, 243, 187),white);
+    position: absolute;
+    bottom: 40px;
+    left: 70px;
+    box-shadow: -6px -6px 90px 2px black,6px 6px 90px 2px black;
+}
+
+.login_from__logo{
+    width: 390px;
+    height: 565px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+  
+}
+
+.login_form_text{
+    width:250px;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 25px;
+    text-align: justify;
+}
+
+.login_div_logo{
+    position: relative;
+}
+
+.login_form__{
+    width: 75%;
+    height: 565px;
+    position:absolute;
+    top: 0;
+    left:28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login_form__content{
+   
+    width: 500px;
+    height: 400px;
+}
+
+.login_form_inputs{
+    width: 100%;
+}
+
+.login_form__content_heading{
+    text-align: center;
+}
+
+.inp,.label_1{
+    margin-left: 35px;
+}
+.label_1{
+    margin-top: 20px;
+}
+
+.inp{
+    height: 45px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin-top: 15px;
+}
+
+.inp::placeholder{
+    font-size: 20px;
+    padding: 0 20px;
+    
+}
+.forgot_pass{
+    font-size: 15px;
+    margin-left:300px ;
+}
+
+.Login__{
+    width: 80%;
+    height: 45px;
+    margin-left: 35px;
+    margin-top:120px;
+    border: none;
+    outline: none;
+    background-color:rgb(76, 243, 187);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.need_help{
+    position:absolute;
+    top: 0;
+    right: 50px;
+}
+.login_register_list a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+/*.................. footer_setion....................................................... */
+.footer_setion{
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-content: flex-end;
+    color: white;
+    font-size: 15px;
+}
+
+.footer_content{
+    border: 2px solid black;
+    display: flex;
+    height: 350px;
+    position: absolute;
+    bottom:0;
+    background-color: black;
+    justify-content: center;
+}
+
+.features{
+    width: 30%;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer_text{
+    text-align: justify;
+    width: 70vw;
+}
+
+.footer_text ul{
+    margin-left:200px;
+}
+
+.footer_text ul{
+    margin-left:200px;
+    list-style-type: none;
+}
+
+.footer_text ul li{
+    margin-top: 15px;
+}
+
+.footer_text ul a{
+    text-decoration: none;
+    color:white;
+}
+
+
+.fa-envelope-o{
+    margin-left: 78px;
+}
+
+.fa{
+    font-size: 25px;
+    margin-top:20px;
+    color: crimson;
+}
+
+.copyright{
+    color: white;
+    position:absolute;
+    bottom: 0%;
+    font-size: 18px;
+}
+
+#name{
+    color: crimson;
+}
+
+.table_head{
+    font-size: 50px;
+}
+
+hr{
+    width: 90%;
+    height: 4px;
+    text-align: center;
+    margin-left: 60px;
+    background-color: crimson;
+    outline: none;
+    border: none;
+}
+.social{
+    margin-top: 30px;
+}
+.social span i{
+   color: tomato;
+    padding:0 8px;
+}
+
+.footer_text ul a:hover{
+    color: tomato;
+    
+}
